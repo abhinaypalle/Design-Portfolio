@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Field to Figma · SSFL Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('ap-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script src="site.js"></script>
+</head>
+<body class="shell ssfl">
+<div id="top"></div>
+
+<aside class="panel" aria-label="Site">
+  <a class="p-id" href="index.html"><img src="photo.jpg" alt=""><div><b>Abhinay Palle</b><span>UX / UI Design Lead</span></div></a>
+  <div class="p-group"><a class="p-link p-back" href="index.html#projects"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>All projects</a></div><div class="p-group"><span class="label">On this page</span><nav class="p-nav toc-list" aria-label="Sections"><a href="#overview"><span class="n">01</span>Overview</a><a href="#problem"><span class="n">02</span>The problem</a><a href="#role"><span class="n">03</span>My role</a><a href="#users"><span class="n">04</span>Users and people</a><a href="#process"><span class="n">05</span>How we worked</a><a href="#field"><span class="n">06</span>Field research</a><a href="#insights"><span class="n">07</span>What we learned</a><a href="#requirements"><span class="n">08</span>Requirements</a><a href="#ia"><span class="n">09</span>Information architecture</a><a href="#decisions"><span class="n">10</span>Key design decisions</a><a href="#evolution"><span class="n">11</span>Concepts and wireframes</a><a href="#final"><span class="n">12</span>Final designs</a><a href="#outcome"><span class="n">13</span>Outcome</a></nav></div>
+  <div class="p-foot">
+    <div class="p-group"><span class="label">Contacts</span>
+      <div class="p-mail"><a class="p-link" href="mailto:abhinaypalle@gmail.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>abhinaypalle@gmail.com</span></a><button class="copy" type="button" data-copy="abhinaypalle@gmail.com">Copy</button></div>
+      <a class="p-link" href="https://www.linkedin.com/in/abhinay-palle-56140580/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10.5V17M8 7.5v.01M12 17v-3.5a2.5 2.5 0 015 0V17M12 10.5V17"/></svg><span>LinkedIn</span></a>
+      <a class="p-link" href="resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>Resume</span></a>
+    </div>
+    <div class="p-group"><span class="label">Mode</span>
+      <div class="mode" role="group" aria-label="Colour mode"><button type="button" data-mode="light" aria-pressed="false"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>Light</button><button type="button" data-mode="dark" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg>Dark</button></div>
+    </div>
+  </div>
+</aside>
+<div class="scrim"></div>
+<div class="mbar"><a class="p-id" href="index.html"><img src="photo.jpg" alt=""><div><b>Abhinay Palle</b><span>UX / UI Design Lead</span></div></a><button class="icon-btn" type="button" data-menu aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button></div>
+
+<section class="hero etv-hero ssfl-hero">
+  <div class="in">
+    <span class="label">Case study · Spandana Sphoorty · Fintech (enterprise)</span>
+    <h1>Field to <span class="solar">Figma</span></h1>
+    <p class="sub">Redesigning Spandana's loan management app for the field officers who serve rural India, based on research across 11 states.</p>
+    <img class="hero-phones" src="ssfl/hero.png" alt="Redesigned SSFL app dashboard on tablet and phone">
+    <div class="meta">
+      <div><span class="label">Client</span><b>Spandana Sphoorty Financial Ltd</b></div>
+      <div><span class="label">Agency</span><b>Think Design</b></div>
+      <div><span class="label">My role</span><b>Design Lead</b></div>
+      <div><span class="label">Duration</span><b>20 weeks</b></div>
+      <div><span class="label">Team</span><b>Design Lead (me), 2 designers</b></div>
+      <div><span class="label">Platform</span><b>Android app · phone and tablet</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="page">
+  <nav class="toc" aria-label="Sections">
+    <span class="label">On this page</span>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#problem">The problem</a></li>
+      <li><a href="#role">My role</a></li>
+      <li><a href="#users">Users and people</a></li>
+      <li><a href="#process">How we worked</a></li>
+      <li><a href="#field">Field research</a></li>
+      <li><a href="#insights">What we learned</a></li>
+      <li><a href="#requirements">Requirements</a></li>
+      <li><a href="#ia">Information architecture</a></li>
+      <li><a href="#decisions">Key design decisions</a></li>
+      <li><a href="#evolution">Concepts and wireframes</a></li>
+      <li><a href="#final">Final designs</a></li>
+      <li><a href="#outcome">Outcome</a></li>
+    </ol>
+  </nav>
+
+<main>
+
+  <!-- 01 -->
+  <section class="s" id="overview">
+    <div class="head"><span class="label">01 · Overview</span><h2>A lender for low-income households</h2></div>
+    <div class="prose">
+      <p>Spandana Sphoorty Financial Limited (SSFL) is a Non-Banking Finance Company (NBFC). Its lending programme aims to strengthen the socio-economic status of low-income households, particularly women, in rural and urban areas, by providing financial services that improve livelihoods, establish identity and enhance self-esteem. Spandana follows both group-based and individual micro-credit lending models.</p>
+      <p>Its field teams run every loan through <b>FIMO</b>, an offline-capable Android app used by Loan Officers and Branch Managers to survey villages, enrol borrowers, run group training and collect repayments.</p>
+    </div>
+    <div class="callout">
+      <span class="label solar">Project goal</span>
+      <p>Spandana Sphoorty's primary objective is to redesign the current LOS/LMS application and build a new customer self service portal, with an expansive focus beyond its existing features. A thorough research is to be conducted to comprehend user pain points, aspirations, and identify opportunities to enhance the experience and operational efficiency. The new portal is to be smartphone and tablet compatible.</p>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section class="s" id="problem">
+    <div class="head"><span class="label">02 · The problem</span><h2>A loan app that worked against its users</h2></div>
+    <div class="prose"><p>Field Officers and Branch Managers relied on a loan management system that was fragmented, unintuitive and poorly aligned with their daily workflows. It caused frequent errors, slow processes and operational inefficiency, especially in rural areas with limited digital literacy. Growth targets and the need for faster disbursal made a redesign critical.</p></div>
+    <div class="stats">
+      <div class="stat warn"><b>10 min</b><span>to register a new borrower</span></div>
+      <div class="stat warn"><b>5–7 min</b><span>to re-register an existing borrower</span></div>
+      <div class="stat warn"><b>2 days</b><span>to create and verify a village</span></div>
+      <div class="stat warn"><b>1.12%</b><span>of customers taking a top-up loan</span></div>
+      <div class="stat"><b>95–98%</b><span>of users work in the field, often offline</span></div>
+    </div>
+    <p class="muted" style="font-size:.88rem">Baseline figures shared by SSFL during the stakeholder workshop.</p>
+    <div class="cards">
+      <div class="card"><span class="label">For SSFL</span><p>Onboard customers faster, sell more repeat and top-up loans, and give field staff the support they need without calling the branch or head office.</p></div>
+      <div class="card"><span class="label">For users</span><p>Loan Officers and Branch Managers needed to finish enrolment, verification and collection quickly and accurately, often in villages with poor connectivity.</p></div>
+      <div class="card"><span class="label">For design</span><p>Turn a 20+ module app built around back-office steps into a task-led tool that works on phones and tablets, online and offline.</p></div>
+      <div class="card hard"><span class="label">What made it hard</span>
+        <ul>
+          <li>A long, multi-stage loan process with many checks and hand-offs.</li>
+          <li>Users with different levels of digital literacy and languages.</li>
+          <li>Offline work had to keep working, with reliable sync.</li>
+          <li>Key data lived only in the desktop portal, not on mobile.</li>
+          <li>Two products in scope: the field app and a customer self service portal.</li>
+          <li>Research spread across 11 states with very different branches.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section class="s" id="role">
+    <div class="head"><span class="label">03 · My role</span><h2>Design Lead</h2></div>
+    <div class="prose"><p>I led a team of two designers and was the main design contact for SSFL's business, product, operations and technology teams, from the first workshop to developer handover.</p></div>
+    <div class="role-intro">
+      <span class="chip me">Design Lead (me)</span>
+      <span class="chip">Designer</span>
+      <span class="chip">Designer</span>
+    </div>
+    <div class="cards">
+      <div class="card"><h3>Leading the team</h3>
+        <ul>
+          <li>Planned the research and split branch visits and interviews across the team.</li>
+          <li>Ran synthesis sessions where the team consolidated findings together.</li>
+          <li>Reviewed all designs for quality and consistency before they went to SSFL.</li>
+          <li>Owned documentation and quality control through execution.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Product and design</h3>
+        <ul>
+          <li>Set the research plan: branch selection, participants and methods.</li>
+          <li>Led synthesis into personas, user stories, task flows and IA.</li>
+          <li>Defined the design concepts, wireframes and visual design.</li>
+          <li>Set up the style guide and components for phone and tablet.</li>
+        </ul>
+      </div>
+      <div class="card"><h3>Working with SSFL</h3>
+        <ul>
+          <li>Facilitated the stakeholder workshop with business, product, IT and operations.</li>
+          <li>Presented concepts and designs, and ran stakeholder walkthroughs.</li>
+          <li>Managed feedback loops and sign-off with the client.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section class="s" id="users">
+    <div class="head"><span class="label">04 · Users and people</span><h2>Who we designed for</h2></div>
+    <div class="personas">
+      <div class="persona"><span class="label">20–28 · Mobile only</span><h3>Loan Officer</h3><p class="q">Surveys villages, forms groups, onboards customers and collects repayments.</p><p class="start">Main tool: <b>FIMO on a smartphone</b></p></div>
+      <div class="persona"><span class="label">25–35 · Desktop and mobile</span><h3>Branch Manager</h3><p class="q">Runs house visits, approves disbursements and supports Loan Officers in the field.</p><p class="start">Main tools: <b>FIMO, LMS and HRMS</b></p></div>
+      <div class="persona roc"><span class="label">20–28 · Mobile only</span><h3>Dedicated Loan Officer</h3><p class="q">Recovers dues from NPA customers and borrowers who miss payments.</p></div>
+      <div class="persona roc"><span class="label">25–40 · Customer side</span><h3>Customer Manager</h3><p class="q">Supports customers who need help. Linked to the new self service portal.</p></div>
+    </div>
+    <figure><button class="frame light" type="button"><img src="ssfl/personas.jpg" alt="Loan Officer and Branch Manager persona cards with goals and responsibilities"></button><figcaption>Personas for the two primary users, built from the workshop and field research.</figcaption></figure>
+    <div class="row2">
+      <div class="card"><span class="label">Branch Manager · Day to day</span>
+        <ul>
+          <li>Keeps Loan Officers informed about new products</li>
+          <li>Prints and shares the demand sheet; runs staff meetings</li>
+          <li>Ensures timely collections and helps with pending cases</li>
+          <li>Handles house visits, GRT and loan sanction</li>
+        </ul>
+      </div>
+      <div class="card"><span class="label">Loan Officer · Day to day</span>
+        <ul>
+          <li>Conducts house visits, GRT and enrolment</li>
+          <li>Collects repayments and deposits cash at the bank</li>
+          <li>Handles sanction, post-sanction and disbursement steps</li>
+          <li>Tallies and closes the day's cases; reports to the branch</li>
+        </ul>
+      </div>
+    </div>
+    <div class="prose"><h3>People we worked with at SSFL</h3></div>
+    <div class="people">
+      <span class="chip">Key business stakeholders</span>
+      <span class="chip">Product team</span>
+      <span class="chip">Operations team</span>
+      <span class="chip">IT and technology teams</span>
+      <span class="chip">Branch Managers and Loan Officers in 11 states</span>
+    </div>
+  </section>
+
+  <!-- 05 -->
+  <section class="s" id="process">
+    <div class="head"><span class="label">05 · How we worked</span><h2>Twenty weeks, from workshop to handover</h2></div>
+    <div class="phases" style="grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));">
+      <div class="phase"><span class="n">5 weeks</span><h3>Discover</h3><p>Stakeholder workshop, field research in 11 states, benchmark study. Insights, personas and journeys.</p></div>
+      <div class="phase"><span class="n">1 week</span><h3>Define</h3><p>Synthesis, user stories, task flows, IA and project plan.</p></div>
+      <div class="phase"><span class="n">2 weeks</span><h3>Design concept</h3><p>Concept exploration and evaluation, style guide.</p></div>
+      <div class="phase"><span class="n">12 weeks</span><h3>Design sprints</h3><p>Module-by-module wireframes, visual design and clickable prototype.</p></div>
+      <div class="phase"><span class="n">Ongoing</span><h3>Handover</h3><p>Assets, design audit and support during development sprints.</p></div>
+    </div>
+
+    <div class="prose">
+      <h3>Discover: stakeholder workshop</h3>
+      <p>We started with a workshop at SSFL's Hyderabad office with business, product, IT, technology and operations teams. Over three sessions we walked through the current app and business process, identified gaps and innovation opportunities, studied competitors, identified personas, and discussed the tech stack. We left with shared objectives and KPIs for the redesign.</p>
+    </div>
+    <div class="row2">
+      <figure><button class="frame" type="button"><img src="ssfl/workshop.jpg" alt="Stakeholder workshop at the SSFL office"></button><figcaption>Mapping the loan process with SSFL stakeholders.</figcaption></figure>
+      <div class="cards" style="grid-template-columns:1fr">
+        <div class="card"><span class="label">Business objectives</span><ul><li>Reduce customer onboarding time</li><li>Upsell top-up loans to eligible customers</li><li>Increase customers taking subsequent loans</li><li>Give Loan Officers support inside the app</li></ul></div>
+        <div class="card"><span class="label">KPIs agreed</span><ul><li>Time to onboard a customer</li><li>Quality of information per page and time spent</li><li>Relationship extended beyond renewal</li></ul></div>
+      </div>
+    </div>
+
+    <div class="prose"><h3>Understanding the loan process</h3><p>A group loan passes through five stages, from creating a village to collecting repayments. Each stage involves several checks and hand-offs between the Loan Officer, Branch Manager and back office.</p></div>
+    <figure><button class="frame light" type="button"><img src="ssfl/process.jpg?v=2" alt="Loan process across five stages: village and centre creation, enrolment and verification, group training and checks, sanction and disbursement, loan management and collection"></button><figcaption>The loan process: village and centre creation → enrolment and verification → group training and checks → sanction and disbursement → collection.</figcaption></figure>
+  </section>
+
+  <!-- 06 -->
+  <section class="s" id="field">
+    <div class="head"><span class="label">06 · Field research</span><h2>Eleven branches in eleven states</h2></div>
+    <div class="prose">
+      <p>We chose branch locations based on loan volume, geographic diversity (deep rural and town/rural) and operational complexity, and shortlisted participants with different experience levels and digital adoption. The team then visited each branch to:</p>
+      <ul>
+        <li><b>Interview</b> Branch Managers and Loan Officers about their goals, tasks and pain points, with a walkthrough of FIMO.</li>
+        <li><b>Observe in context:</b> join them in the field to see centre meetings, house visits and collections, and how FIMO was really used.</li>
+        <li><b>Benchmark</b> competitor apps and processes for JLG lending.</li>
+      </ul>
+    </div>
+    <figure><button class="frame" type="button"><img src="ssfl/field.jpg" alt="Field visits: centre meetings, house visits and enrolment with Loan Officers"></button><figcaption>Field visits: centre meetings, house visits, document checks and enrolment.</figcaption></figure>
+    <figure><button class="frame light" type="button"><img src="ssfl/research-plan.jpg" alt="Research plan spreadsheets with branch locations and participants"></button><figcaption>Research plan: branches by zone and category, participants and team itinerary.</figcaption></figure>
+  </section>
+
+  <!-- 07 -->
+  <section class="s" id="insights">
+    <div class="head"><span class="label">07 · What we learned</span><h2>From raw data to actionable insights</h2></div>
+    <div class="prose"><p>In Miro, we organised every interview, observation and piece of app feedback into high-level goals, daily tasks, operational challenges, aspirations, app feedback and field insights, for each branch and each role. We then mapped task flows and overlaid pain points at each step to find the moments of friction.</p></div>
+    <figure><button class="frame light" type="button"><img src="ssfl/consolidation.jpg" alt="Miro boards: research consolidation by branch and task flows with pain points"></button><figcaption>Research consolidation by branch (top) and Loan Officer and Branch Manager day flows with pain points (bottom).</figcaption></figure>
+    <div class="insights">
+      <div class="insight">
+        <div><span class="label">We saw</span><p>Officers cropped and filtered Aadhaar and Voter ID photos by hand before upload, and typed Voter ID details twice.</p></div>
+        <div><span class="label">What it meant</span><p>Data entry, not the process itself, was what made enrolment slow and error-prone.</p></div>
+        <div><span class="label solar">What we did</span><p>Guided document capture with built-in filters, and OCR to fill details automatically.</p></div>
+      </div>
+      <div class="insight">
+        <div><span class="label">We saw</span><p>The dashboard was a placeholder. Branch Managers passed on eligibility lists and product updates by hand.</p></div>
+        <div><span class="label">What it meant</span><p>Officers had no single view of their day, their targets or their opportunities.</p></div>
+        <div><span class="label solar">What we did</span><p>A task-led dashboard with today's work, newly eligible customers and incentive progress.</p></div>
+      </div>
+      <div class="insight">
+        <div><span class="label">We saw</span><p>The demand table needed constant horizontal scrolling, and promise-to-pay dates were kept in a paper journal.</p></div>
+        <div><span class="label">What it meant</span><p>Collection screens hid the information officers needed most during a centre meeting.</p></div>
+        <div><span class="label solar">What we did</span><p>One card per borrower with dues, overdue amount, status and PTP tracking.</p></div>
+      </div>
+      <div class="insight">
+        <div><span class="label">We saw</span><p>Long lists had no search. Finding a loan ID meant leaving the page and entering Aadhaar, centre and village.</p></div>
+        <div><span class="label">What it meant</span><p>Officers think in village → centre → group → member. The app did not.</p></div>
+        <div><span class="label solar">What we did</span><p>Global search across members, villages, centres and groups, with filters.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 -->
+  <section class="s" id="requirements">
+    <div class="head"><span class="label">08 · Requirements</span><h2>What the new app had to do</h2></div>
+    <div class="features">
+      <div class="feature"><b>Dashboard with insights</b><p>Track customers, targets and incentives in one place.</p></div>
+      <div class="feature"><b>Real-time sync</b><p>Show approvals and application status as they happen.</p></div>
+      <div class="feature"><b>Phone to tablet</b><p>Scale from mobile devices to tablets.</p></div>
+      <div class="feature"><b>Quick access to support</b><p>Reach help from any page, with the page shared with support.</p></div>
+      <div class="feature"><b>Educate and inform</b><p>Subtext at each step explaining the flow and progress.</p></div>
+      <div class="feature"><b>Tag NPA customers</b><p>Flagged lists to make recovery easier.</p></div>
+      <div class="feature"><b>Post-purchase offers</b><p>Show dormant and existing customers eligible for new or top-up loans.</p></div>
+      <div class="feature"><b>Ease data entry</b><p>Use OCR to automate data entry.</p></div>
+      <div class="feature"><b>Data security</b><p>Face ID and fingerprint unlock.</p></div>
+    </div>
+    <figure><button class="frame light" type="button"><img src="ssfl/user-stories.jpg" alt="User stories spreadsheet by module"></button><figcaption>User stories written for every module, with reasoning, so developers could trace each flow.</figcaption></figure>
+  </section>
+
+  <!-- 09 -->
+  <section class="s" id="ia">
+    <div class="head"><span class="label">09 · Information architecture</span><h2>From back-office steps to daily tasks</h2>
+      <p class="muted">The old app put 20+ modules in one left menu, in the order the back office processes a loan. The new structure is built around what officers do each day.</p></div>
+    <div class="row2">
+      <figure><button class="frame light" type="button"><img src="ssfl/ia-current.jpg" alt="Current information architecture with a long left navigation"></button><figcaption>Before: dashboard plus a left menu of 20+ modules.</figcaption></figure>
+      <figure><button class="frame light" type="button"><img src="ssfl/ia-updated.jpg" alt="Updated information architecture grouped into six sections"></button><figcaption>After: six clear sections: Dashboard, Enrolment, Search, Notifications, Sync and More.</figcaption></figure>
+    </div>
+    <div class="row2">
+      <figure><button class="frame light" type="button"><img src="ssfl/flow-enrollment.jpg" alt="Enrolment task flow"></button><figcaption>Task flow: enrolment.</figcaption></figure>
+      <figure><button class="frame light" type="button"><img src="ssfl/flow-collections.jpg" alt="Collections task flow"></button><figcaption>Task flow: collections, including overdue and advance collection.</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="s" id="decisions">
+    <div class="head"><span class="label">10 · Key design decisions</span><h2>How we made design decisions</h2>
+      <p class="muted">Every decision traced back to a finding from the field. The 4 below show how we compared options and accepted trade-offs.</p></div>
+
+    <article class="decision">
+      <div class="top"><span class="label">Decision · Dashboard</span><h3>A dashboard built around today's tasks</h3></div>
+      <div class="screens">
+        <figure><button class="frame" type="button"><img src="ssfl/concept-1.png" alt="Concept 1 dashboard with performance and task tiles"></button><figcaption>Concept 1</figcaption></figure>
+        <figure><button class="frame" type="button"><img src="ssfl/concept-2.png" alt="Concept 2 dashboard with task list and leaderboard"></button><figcaption>Concept 2</figcaption></figure>
+        <figure><button class="frame" type="button"><img src="ssfl/v-dashboard.png" alt="Final dashboard"></button><figcaption>Final</figcaption></figure>
+      </div>
+      <dl class="dgrid">
+        <dt>Problem</dt><dd>The existing dashboard was an empty placeholder. Officers had no view of their day, targets or opportunities.</dd>
+        <dt>Options</dt><dd><ol><li>Concept 1: performance first, with task tiles and an eligible list</li><li>Concept 2: a task list by group, with a branch leaderboard</li></ol></dd>
+        <dt class="pick">Our choice</dt><dd class="pick">Task tiles from Concept 1, refined: colour-coded counts for Collection, Enrolment, CGT and LUC, then New eligible and Sampark calls, then incentive and performance.</dd>
+        <dt>Trade-off</dt><dd>The detailed task list and leaderboard moved one tap away, behind "View all".</dd>
+        <dt>Result</dt><dd>One screen answers "what do I do today?", "who can I sell to?" and "how am I doing?".</dd>
+      </dl>
+    </article>
+
+    <article class="decision">
+      <div class="top"><span class="label">Decision · Enrolment</span><h3>Capture documents once, correctly</h3></div>
+      <div class="screens">
+        <figure><button class="frame" type="button"><img src="ssfl/wf-2.png" alt="Member details step with document uploads"></button><figcaption>Step 1 of 6, with Quick Fill</figcaption></figure>
+        <figure><button class="frame" type="button"><img src="ssfl/wf-3.png" alt="Document capture with filters"></button><figcaption>Guided capture with filters</figcaption></figure>
+        <figure><button class="frame" type="button"><img src="ssfl/wf-4.png" alt="Uploaded documents ready to re-upload if needed"></button><figcaption>Uploaded, with re-upload</figcaption></figure>
+      </div>
+      <dl class="dgrid">
+        <dt>Problem</dt><dd>Registering a new borrower took 10 minutes. Officers cropped and filtered ID photos manually and re-typed details.</dd>
+        <dt>Options</dt><dd><ol><li>Keep one long form, add OCR</li><li>Break enrolment into steps, with guided capture and OCR</li></ol></dd>
+        <dt class="pick">Our choice</dt><dd class="pick">A 6-step flow with progress shown. In-app capture with a frame guide, auto colour and filter options, and OCR-based Quick Fill.</dd>
+        <dt>Trade-off</dt><dd>More screens to move through, but each is shorter and clearly shows what is left.</dd>
+        <dt>Result</dt><dd>Removes manual cropping and duplicate typing, directly targeting the onboarding-time KPI.</dd>
+      </dl>
+    </article>
+
+    <article class="decision">
+      <div class="top"><span class="label">Decision · Collections</span><h3>Every borrower's status, in context</h3></div>
+      <div class="screens">
+        <figure><button class="frame" type="button"><img src="ssfl/v-collection.png" alt="Group collection screen with borrower cards"></button><figcaption>Group collection</figcaption></figure>
+        <figure><button class="frame" type="button"><img src="ssfl/v-borrower.png" alt="Borrower details with loans and PTP"></button><figcaption>Borrower details and PTP</figcaption></figure>
+      </div>
+      <dl class="dgrid">
+        <dt>Problem</dt><dd>The demand table scrolled sideways, multiple loans showed as separate rows, PTP dates lived on paper, and only 1.12% of customers took top-up loans.</dd>
+        <dt>Options</dt><dd><ol><li>Improve the table</li><li>One card per borrower, with status and actions</li></ol></dd>
+        <dt class="pick">Our choice</dt><dd class="pick">Borrower cards with a colour stripe and tag (Overdue, NPA, Eligible for top-up), demand and OD fields, payment mode, and a single "Collect" total for the group.</dd>
+        <dt>Trade-off</dt><dd>Fewer borrowers fit on one screen than in a table.</dd>
+        <dt>Result</dt><dd>No sideways scrolling, PTP tracked in the app, and top-up eligibility visible during the centre meeting, when the officer can act on it.</dd>
+      </dl>
+    </article>
+
+    <article class="decision">
+      <div class="top"><span class="label">Decision · Navigation and search</span><h3>Find anyone, the way officers think</h3></div>
+      <div class="screens">
+        <figure><button class="frame" type="button"><img src="ssfl/v-search.png" alt="Search results across villages, centres and groups"></button><figcaption>Global search with filters</figcaption></figure>
+      </div>
+      <dl class="dgrid">
+        <dt>Problem</dt><dd>Long lists had no search, and finding a loan meant leaving the current task.</dd>
+        <dt>Options</dt><dd><ol><li>Add search to each list</li><li>One global search, plus a bottom bar for daily needs</li></ol></dd>
+        <dt class="pick">Our choice</dt><dd class="pick">Global search with filters for members, villages, centres and groups, and a bottom bar with Home, Lists, Sync and More. Sync is always one tap away for offline work.</dd>
+        <dt>Trade-off</dt><dd>Less-used modules sit one level deeper, under More.</dd>
+        <dt>Result</dt><dd>Officers reach any borrower from anywhere, and sync status is always visible.</dd>
+      </dl>
+    </article>
+  </section>
+
+  <!-- 11 -->
+  <section class="s" id="evolution">
+    <div class="head"><span class="label">11 · Concepts and wireframes</span><h2>Testing the flow before the visuals</h2>
+      <p class="muted">We validated two dashboard concepts with stakeholders, then wireframed each module. Below is the enrolment flow.</p></div>
+    <div class="screens">
+      <figure><button class="frame" type="button"><img src="ssfl/wf-1.png" alt="Enrolment list with monthly target"></button><figcaption>Enrolment list and target</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/wf-2.png" alt="Member details"></button><figcaption>Member details</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/wf-3.png" alt="Capture document"></button><figcaption>Capture document</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/wf-4.png" alt="Documents uploaded"></button><figcaption>Documents uploaded</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/wf-5.png" alt="Group allocation"></button><figcaption>Group allocation</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="s" id="final">
+    <div class="head"><span class="label">12 · Final designs</span><h2>One app, phone and tablet</h2>
+      <p class="muted">All data on these screens is dummy data. Click any screen to see it larger.</p></div>
+    <figure><button class="frame" type="button" style="background:var(--surface-2)"><img src="ssfl/hero.png" alt="Dashboard on tablet and phone" style="max-height:620px;width:auto;margin:0 auto;padding:24px"></button><figcaption>The dashboard adapts from phone to tablet.</figcaption></figure>
+    <div class="screens">
+      <figure><button class="frame" type="button"><img src="ssfl/v-dashboard.png" alt="Dashboard"></button><figcaption>Dashboard</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/v-collection.png" alt="Collection"></button><figcaption>Group collection</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/v-borrower.png" alt="Borrower details"></button><figcaption>Borrower details</figcaption></figure>
+      <figure><button class="frame" type="button"><img src="ssfl/v-search.png" alt="Search"></button><figcaption>Search</figcaption></figure>
+    </div>
+    <div class="prose"><h3>Design system</h3><p class="muted">A style guide with Spandana blue and orange, status colours, the Lato type family, touch-target-sized icons, and components for buttons, tabs, task cards, performance cards and borrower cards, ready for developers.</p></div>
+  </section>
+
+  <!-- 13 -->
+  <section class="s" id="outcome">
+    <div class="head"><span class="label">13 · Outcome</span><h2>What we delivered</h2></div>
+    <div class="impact">
+      <div class="card"><span class="label">Research</span><h3>A shared picture</h3><ul><li>Workshop summary with objectives and KPIs</li><li>Field insights from 11 states</li><li>Personas and journeys</li></ul></div>
+      <div class="card"><span class="label">Structure</span><h3>A clear foundation</h3><ul><li>Updated information architecture</li><li>Task flows for every module</li><li>User stories for development</li></ul></div>
+      <div class="card"><span class="label">Design</span><h3>Ready to build</h3><ul><li>Concepts, wireframes and visuals for phone and tablet</li><li>Style guide and components</li><li>Clickable prototype and handover support</li></ul></div>
+    </div>
+    <blockquote>The SSFL project let me engage deeply with real users in complex, distributed environments across 11 states. Combining field research, structured synthesis and iterative design, we turned a legacy loan system into a streamlined, scalable app shaped by the on-ground realities of Branch Managers and Loan Officers.</blockquote>
+  </section>
+
+</main>
+</div>
+
+<nav class="endnav" aria-label="More case studies">
+  <div class="endnav-in">
+    <div class="endnav-head"><span class="label">Up next</span><span class="endnav-count">02 / 03</span></div>
+    <a class="nextcard" href="ge.html">
+      <div class="nc-pic"><img src="ge/f-analyze-fleet.jpg" alt="" style="object-position:left top"></div>
+      <div class="nc-txt">
+        <span class="label">02 · GE Renewable Energy</span>
+        <h2>One Platform, Two Energies</h2>
+        <p>How I led the design work to bring GE's solar plant software into LifeSpan, a platform built for wind farms, without breaking it for wind users.</p>
+        <span class="nc-go">Read the case study <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+    <div class="endnav-row">
+      <a class="pill-link" href="index.html#projects"><svg viewBox="0 0 24 24"><path d="M4 5h7v7H4zM13 5h7v7h-7zM4 14h7v5H4zM13 14h7v5h-7z"/></svg>View all projects</a>
+      <a class="pill-link" href="#top"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>Back to top</a>
+    </div>
+  </div>
+</nav>
+
+<footer class="foot"><div class="in"><span>Abhinay Palle · Lead UX Designer</span><span>All data shown on SSFL screens is dummy data.</span></div></footer>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Enlarged image"><button type="button" id="lbClose">Close</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+
+<script>
+(function () {
+  var lb = document.getElementById('lb'), img = document.getElementById('lbImg'), cap = document.getElementById('lbCap'), last = null;
+  function close() { lb.hidden = true; img.src = ''; if (last) last.focus(); }
+  document.querySelectorAll('figure .frame').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var i = b.querySelector('img'), fc = b.parentElement.querySelector('figcaption');
+      last = b; img.src = i.src; img.alt = i.alt; cap.textContent = fc ? fc.textContent : '';
+      lb.hidden = false; document.getElementById('lbClose').focus();
+    });
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) close(); });
+  var links = Array.prototype.slice.call(document.querySelectorAll('.toc a'));
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); }); });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
